@@ -24,7 +24,7 @@ python -m pip install tqdm lmdb pyyaml opencv-python scikit-image
 cd ops/dcn/
 bash build.sh
 ```
-Check if DCNv2 work(optional)
+Check if DCNv2 work (optional)
 ```python
 python simple_check.py
 ```
