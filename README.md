@@ -40,8 +40,11 @@ python train_LD_QP22.py --opt_path ./config/option_CVQE_V3_7_6_cvpd_LDB_37.yml
 python test_LD_QP22.py --opt_path ./config/option_CVQE_V3_7_6_cvpd_LDB_37.yml
 ```
 
+# Acknowledgement
+Thanks for the provided released code of [STDF](https://github.com/ryanxingql/stdf-pytorch) and [MFQEv2](https://github.com/ryanxingql/mfqev2.0).
+
 # Citation
-If you find this repository helpful, please cite our paper:
+If this repository is helpful to your research, please cite our paper:
 ```python
 @inproceedings{2024qiang_cpga,
   title={Coding Priors-Guided Aggregation Network for Compressed Video Quality Enhancement},
