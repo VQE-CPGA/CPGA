@@ -58,7 +58,8 @@ python train_LD_QP22.py --opt_path ./config/option_CVQE_V3_7_6_cvpd_LDB_37.yml
 python test_LD_QP22.py --opt_path ./config/option_CVQE_V3_7_6_cvpd_LDB_37.yml
 ```
 # Citation
-We adopt Apache License v2.0. For other licenses, please refer to [STDF](https://github.com/ryanxingql/stdf-pytorch) and [MFQEv2](https://github.com/ryanxingql/mfqev2.0).
+We adopt Apache License v2.0. For other licenses, please refer to [DCNv2](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch/blob/master/LICENSE).
+
 If this repository is helpful to your research, please cite our paper:
 ```python
 @inproceedings{2024qiang_cpga,
