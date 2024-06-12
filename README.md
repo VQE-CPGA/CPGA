@@ -5,7 +5,7 @@ The dataset and code of the paper "CPGA: Coding Priors-Guided Aggregation Networ
 # Requirements
 
 CUDA==11.3 Python==3.7 
-## ·Environment
+## 1.1 Environment
 ```python
 conda create -n cpga python=3.7 -y && conda activate cpga
 
@@ -16,7 +16,7 @@ python -m pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://dow
 
 python -m pip install tqdm lmdb pyyaml opencv-python scikit-image
 ```
-## ·DCNv2
+## 1.2 DCNv2
 ```python
 cd ops/dcn/
 bash build.sh
@@ -25,7 +25,7 @@ Check if DCNv2 work(optional)
 ```python
 python simple_check.py
 ```
-## ·VCP dataset
+## 1.3 VCP dataset
 Download raw and compressed videos [[BaiduPan]](https://blog.csdn.net/A33280000f/article/details/115836658)
 
 # Train
