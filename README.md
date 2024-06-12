@@ -41,7 +41,7 @@ You need to edit option_CPGA_#_QP#.yml file.
 
 We now generate LMDB to speed up IO during training.
 ```python
-python create_lmdb_mfqev2.py --opt_path option_R3_mfqev2_4G.yml
+python create_lmdb_cpga.py --opt_path option_CPGA_#_QP#.yml
 ```
 Finally, the VCP dataset root will be sym-linked to the folder ./data/ automatically.
 
