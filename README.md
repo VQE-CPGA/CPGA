@@ -29,9 +29,23 @@ Check if DCNv2 work(optional)
 python simple_check.py
 ```
 ## 1.3 VCP dataset
-Download raw and compressed videos [[BaiduPan]](https://blog.csdn.net/A33280000f/article/details/115836658).
+**Download raw and compressed videos** 
+Please check [[BaiduPan]](https://blog.csdn.net/A33280000f/article/details/115836658).
+
+**Edit YML**
+We now edit option_R3_mfqev2_4G.yml.
+
+Suppose the folder MFQEv2_dataset/ is placed at /raid/xql/datasets/MFQEv2_dataset/, then you should assign /raid/xql/datasets/MFQEv2_dataset/ to dataset -> train -> root in YAML.
+
+**Generate LMDB**
+We now generate LMDB to speed up IO during training.
+```python
+python create_lmdb_mfqev2.py --opt_path option_R3_mfqev2_4G.yml
+```
+Finally, the VCP dataset root will be sym-linked to the folder ./data/ automatically.
 
 ## 1.4 Test dataset
+**Download raw and compressed videos**  
 We use the JCT-VC testing dataset in [JCT-VC](xxx). Download raw and compressed videos [[BaiduPan]](https://blog.csdn.net/A33280000f/article/details/115836658).
 
 # Train
