@@ -35,7 +35,7 @@ Please check [[BaiduPan]](https://blog.csdn.net/A33280000f/article/details/11583
 
 **Edit YML**
 
-You need to edit option_CPGA_#_QP#.yml file.
+You need to edit option_CPGA_vcp_#_QP#.yml file.
 
 **Generate LMDB**
 
