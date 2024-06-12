@@ -4,9 +4,7 @@ The dataset and code of the paper "CPGA: Coding Priors-Guided Aggregation Networ
 
 # Requirements
 
-CUDA==11.6 
-
-Python==3.7 
+CUDA==11.6 Python==3.7 Pytorch==1.13
 
 ## 1.1 Environment
 ```python
