@@ -39,7 +39,7 @@ You need to edit option_CPGA_#_QP#.yml file.
 
 **Generate LMDB**
 
-We now generate LMDB to speed up IO during training.
+The LMDB generatation for speeding up IO during training.
 ```python
 python create_lmdb_cpga.py --opt_path option_CPGA_#_QP#.yml
 ```
