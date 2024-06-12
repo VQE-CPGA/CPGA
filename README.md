@@ -48,7 +48,7 @@ Finally, the VCP dataset root will be sym-linked to the folder ./data/ automatic
 ## 1.4 Test dataset
 **Download raw and compressed videos**  
 
-We use the JCT-VC testing dataset in [JCT-VC](xxx). Download raw and compressed videos [[BaiduPan]](https://blog.csdn.net/A33280000f/article/details/115836658).
+We use the JCT-VC testing dataset in [JCT-VC](https://ieeexplore.ieee.org/document/6317156). Download raw and compressed videos [[BaiduPan]](https://blog.csdn.net/A33280000f/article/details/115836658).
 
 # Train
 ```python
