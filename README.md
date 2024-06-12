@@ -29,7 +29,10 @@ Check if DCNv2 work(optional)
 python simple_check.py
 ```
 ## 1.3 VCP dataset
-Download raw and compressed videos [[BaiduPan]](https://blog.csdn.net/A33280000f/article/details/115836658)
+Download raw and compressed videos [[BaiduPan]](https://blog.csdn.net/A33280000f/article/details/115836658).
+
+## 1.4 Test dataset
+We use the JCT-VC testing dataset in [JCT-VC](xxx). Download raw and compressed videos [[BaiduPan]](https://blog.csdn.net/A33280000f/article/details/115836658).
 
 # Train
 ```python
