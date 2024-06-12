@@ -30,12 +30,15 @@ python simple_check.py
 ```
 ## 1.3 VCP dataset
 **Download raw and compressed videos** 
+
 Please check [[BaiduPan]](https://blog.csdn.net/A33280000f/article/details/115836658).
 
 **Edit YML**
+
 You need to edit option_CPGA_#_QP#.yml file.
 
 **Generate LMDB**
+
 We now generate LMDB to speed up IO during training.
 ```python
 python create_lmdb_mfqev2.py --opt_path option_R3_mfqev2_4G.yml
