@@ -36,7 +36,9 @@ python train_LD_QP22.py --opt_path ./config/option_CVQE_V3_7_6_cvpd_LDB_37.yml
 ```python
 python test_LD_QP22.py --opt_path ./config/option_CVQE_V3_7_6_cvpd_LDB_37.yml
 ```
+
 # Citation
+If you find this repository helpful, please cite our paper:
 ```python
 @inproceedings{2024qiang_cpga,
   title={Coding Priors-Guided Aggregation Network for Compressed Video Quality Enhancement},
@@ -46,5 +48,24 @@ python test_LD_QP22.py --opt_path ./config/option_CVQE_V3_7_6_cvpd_LDB_37.yml
   number={},
   pages={},
   year={2024}
+}
+@article{zhu2024deep,
+  title={Deep Compressed Video Super-Resolution With Guidance of Coding Priors},
+  author={Qiang Zhu, Feiyu Chen, Yu Liu, Shuyuan Zhu, Bing Zeng},
+  journal={ IEEE Transactions on Broadcasting },
+  volume={70},
+  issue={2},
+  pages={505-515},
+  year={2024}
+  publisher={IEEE},
+  doi={10.1109/TBC.2024.3394291}
+}
+@article{zhu2024compressed,
+  title={Compressed Video Quality Enhancement with Temporal Group Alignment and Fusion},
+  author={Qiang, Zhu and Yajun, Qiu and Yu, Liu and Shuyuan, Zhu and Bing, Zeng},
+  journal={IEEE Signal Processing Letters},
+  year={2024},
+  publisher={IEEE},
+  doi={10.1109/LSP.2024.3407536}
 }
 ```
