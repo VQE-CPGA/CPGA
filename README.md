@@ -26,7 +26,7 @@ Check if DCNv2 work(optional)
 python simple_check.py
 ```
 ## VCP dataset
-Download raw and compressed videos [![BaiduPan]](https://blog.csdn.net/A33280000f/article/details/115836658)
+Download raw and compressed videos [[BaiduPan]](https://blog.csdn.net/A33280000f/article/details/115836658)
 
 # Train
 ```python
