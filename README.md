@@ -51,11 +51,11 @@ We use the JCT-VC testing dataset in [JCT-VC](https://ieeexplore.ieee.org/docume
 
 # Train
 ```python
-python train_LD_QP22.py --opt_path ./config/option_CVQE_V3_7_6_cvpd_LDB_37.yml
+python train_CPGA.py --opt_path ./config/option_CPGA_vcp_LDB_22.yml
 ```
 # Test
 ```python
-python test_LD_QP22.py --opt_path ./config/option_CVQE_V3_7_6_cvpd_LDB_37.yml
+python test_CPGA.py --opt_path ./config/option_CPGA_vcp_LDB_22.yml
 ```
 # Citation
 If this repository is helpful to your research, please cite our paper:
