@@ -33,9 +33,7 @@ python simple_check.py
 Please check [[BaiduPan]](https://blog.csdn.net/A33280000f/article/details/115836658).
 
 **Edit YML**
-We now edit option_R3_mfqev2_4G.yml.
-
-Suppose the folder MFQEv2_dataset/ is placed at /raid/xql/datasets/MFQEv2_dataset/, then you should assign /raid/xql/datasets/MFQEv2_dataset/ to dataset -> train -> root in YAML.
+You need to edit option_CPGA_#_QP#.yml file.
 
 **Generate LMDB**
 We now generate LMDB to speed up IO during training.
