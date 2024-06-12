@@ -1,0 +1,87 @@
+dataset:
+  root: ./CPGA/data/VCP/
+  train:  # LMDB
+    type:  CVPDpriorDatasetV0
+
+    root: ./CPGA/data/VCP/
+    gt_folder: GT/
+    lq_folder: LQ_Priors/LD/qp22  #  img png 
+    mv_folder: LQ_Priors/LD/qp22/mv  #  .npy 
+    rm_folder: LQ_Priors/LD/qp22/residue  # .npy
+    pd_folder: LQ_Priors/LD/qp22/pred  # img png
+
+    # for dataset lmdb
+    gt_path: cvpd_train_gt.lmdb  # cvpd_train_full_gt.lmdb  #  cvpd_train_gt.lmdb
+    lq_path: cvpd_train_lq_ldb_22.lmdb
+    meta_info_fp: meta_info.txt
+    gtmeta_path: sep_trainlist_GT.txt  # sep_testlist_GT.txt
+    lqmeta_path: sep_trainlist_LQ.txt  #
+    mv_path: cvpd_train_mv_ldb_37_int8.lmdb   #   cvpd_train_mv_ldb_37_int8.lmdb  cvpd_train_mv_ldb_37_bk
+    rm_path: cvpd_train_rm_ldb_37.lmdb   #  cvpd_train_rm_ldb_37_center.lmdb
+    pd_path: cvpd_train_pd_ldb_22.lmdb
+    meta_info_fp: meta_info.txt
+
+    gt_size: 224 # 128  # ground truth patch size: gt_size * gt_size
+    use_flip: True
+    use_rot: True  # rotation per 90 degrees
+    random_reverse: False
+
+    # for datasampler
+    enlarge_ratio: 300  # enlarge dataset by randomly cropping.
+
+    # for dataloader
+    num_worker_per_gpu: 64  # 12 in total. mainly affect IO speed
+    batch_size_per_gpu: 8  # bs=8, divided by 1 GPUs
+
+  test:  # Disk IO
+    type: VideoTestCVPDwithpriorDatasetV1  # VideoTestCVPDwithpriorFullDataset # 
+    root: ./CPGA/data/VCP/
+    gt_path: test18_data/gt_Y/
+    lq_path: test18_data/LD/qp22/
+
+  val:  # Disk IO
+    type: VideoTestCVPDwithpriorDatasetV1  # VideoTestCVPDwithpriorFullDataset #  
+    root: ./CPGA/data/VCP/
+    gt_path: test00_data/gt_Y/
+    lq_path: test00_data/LD/qp22/
+
+network:
+  radius: 3   # total num of input frame = 2 * radius + 1
+
+train:
+  exp_name: CPGA_VCP_LDB_QP22  # default: timestr. None: ~
+  random_seed: 0
+  pre-val: False # True # True # False  # evaluate criterion before training, e.g., ori PSNR
+  num_iter: !!float 5e+5
+  interval_print: !!float 100 # 100 # 100 # 100 #100
+  interval_val: !!float  2000 # 5000  # also save model
+  pbar_len: 100
+
+  optim:
+    type: Adam
+    lr: !!float 1e-5  # init lr of scheduler
+    betas: [0.9, 0.999]
+    eps: !!float 1e-08
+
+  scheduler:
+    is_on: False
+    type: CosineAnnealingRestartLR
+    periods: [!!float 5e+4, !!float 5e+4, !!float 5e+4, !!float 5e+4, !!float 5e+4, !!float 5e+4]  # epoch interval
+    restart_weights: [1, 0.5, 0.5, 0.5, 0.5, 0.5]
+    eta_min: !!float 1e-7
+
+  loss:
+    type: CharbonnierLoss
+    eps: !!float 1e-6
+
+  criterion:
+    type: PSNR
+    unit: dB
+
+test:
+  restore_iter: !!float 500000 # 98000
+  pbar_len: 100
+
+  criterion:
+    type: PSNR
+    unit: dB
