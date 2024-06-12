@@ -4,7 +4,10 @@ The dataset and code of the paper "CPGA: Coding Priors-Guided Aggregation Networ
 
 # Requirements
 
-CUDA==11.6 Python==3.7 
+CUDA==11.6 
+
+Python==3.7 
+
 ## 1.1 Environment
 ```python
 conda create -n cpga python=3.7 -y && conda activate cpga
@@ -12,7 +15,7 @@ conda create -n cpga python=3.7 -y && conda activate cpga
 git clone --depth=1 https://github.com/VQE-CPGA/CPGA && cd VQE-CPGA/CPGA/
 
 # given CUDA 11.6
-pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
+python -m pip install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
 
 python -m pip install tqdm lmdb pyyaml opencv-python scikit-image
 ```
