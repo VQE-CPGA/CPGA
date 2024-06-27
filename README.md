@@ -29,7 +29,7 @@ python simple_check.py
 ## 1.3 VCP dataset
 **Download raw and compressed videos** 
 
-Please check [[BaiduPan]](https://blog.csdn.net/A33280000f/article/details/115836658).
+Please check [[BaiduPan][qix5]](https://pan.baidu.com/s/1IFjZF2MvCyVOmgTBHgl2IA).
 
 **Edit YML**
 
