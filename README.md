@@ -58,13 +58,11 @@ python test_CPGA.py --opt_path ./config/option_CPGA_vcp_LDB_22.yml
 # Citation
 If this repository is helpful to your research, please cite our paper:
 ```python
-@inproceedings{2024qiang_cpga,
-  title={Coding Priors-Guided Aggregation Network for Compressed Video Quality Enhancement},
-  author={Qiang Zhu, Jinhua Hao, Yukang Ding, Yu Liu, Qiao Mo, Ming Sun, Chao Zhou, Shuyuan Zhu},
-  booktitle={The IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024},
-  volume={},
-  number={},
-  pages={},
+@inproceedings{zhu2024cpga,
+  title={CPGA: Coding Priors-Guided Aggregation Network for Compressed Video Quality Enhancement},
+  author={Zhu, Qiang and Hao, Jinhua and Ding, Yukang and Liu, Yu and Mo, Qiao and Sun, Ming and Zhou, Chao and Zhu, Shuyuan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={2964--2974},
   year={2024}
 }
 @article{zhu2024deep,
