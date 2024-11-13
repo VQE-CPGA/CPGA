@@ -29,7 +29,7 @@ python simple_check.py
 ## 1.3 VCP dataset
 **Download raw and compressed videos** 
 
-Please check [[BaiduPan][qix5]](https://pan.baidu.com/s/1IFjZF2MvCyVOmgTBHgl2IA).
+Please check [[BaiduPan]](https://pan.baidu.com/s/1IFjZF2MvCyVOmgTBHgl2IA),Code [qix5].
 
 **Edit YML**
 
@@ -45,7 +45,7 @@ Finally, the VCP dataset root will be sym-linked to the folder ./data/ automatic
 
 ## 1.4 Test dataset
 
-We use the JCT-VC testing dataset in [JCT-VC](https://ieeexplore.ieee.org/document/6317156). Download raw and compressed videos [[BaiduPan][qix5]](https://pan.baidu.com/s/1IFjZF2MvCyVOmgTBHgl2IA).
+We use the JCT-VC testing dataset in [JCT-VC](https://ieeexplore.ieee.org/document/6317156). Download raw and compressed videos [[BaiduPan]](https://pan.baidu.com/s/1IFjZF2MvCyVOmgTBHgl2IA),Code [qix5].
 
 # Train
 ```python
